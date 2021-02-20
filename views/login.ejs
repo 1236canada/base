@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .root {
+        position: absolute;
+        width: 1000px;
+        height: 1000px;
+        background: url("https://upload-bbs.mihoyo.com/upload/2021/01/01/75276539/11d78eec33cffaa621bc95ff0aab74af_8134620583549783353.png?x-oss-process=image/resize,s_600/quality,q_80/auto-orient,0/interlace,1/format,png") no-repeat ;
+        background-size:contain;
+      }
+      .bgc {
+        
+        display: flex;
+        justify-content: center;
+      }
+      .login-box-bodyWrap{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 102, 0, 0.89);
+        opacity: 80%;
+        border-radius: 10px;
+        width: 300px;
+        height: 130px;
+        margin-left: 380px;
+        margin-top: 200px;
+      }
+      .log1{
+margin-top: 20px;
+opacity: 200%;
+        border-color: white;
+        color: black;
+      }
+      .log2{
+        margin-left: 1px;
+        opacity: 200%;
+        border-color: white;
+        color: black;
+      }
+      .btn1{
+  width: 100px;
+        height: 30px;
+        margin-left: 60px;
+        margin-top: 10px;
+        opacity: 200%;
+        border-radius: 10px;
+        border-color: white;
+        color: orange;
+        background-color: black;
+
+}
+#username{
+  border-radius: 5px;
+        border-color: white;
+        color: orange;
+        background-color: black;
+}
+#password{
+  border-radius: 5px;
+        border-color: white;
+        color: orange;
+        background-color: black;
+}
+
+       
+    </style>
+  </head>
+  <body>
+      <div class="root">
+        <div class="bgc">
+            <h1 class="title">商品管理登录系统</h1>     
+        </div>
+ 
+        <div class="login-box-bodyWrap">
+            <div class="login-box-body">
+                <form action="/login/in" method="post">
+                   
+                  <p class="log1">  用户名 <input type="text"  placeholder="请输入你的管理员账号" id="username" name="username"></p>
+                    
+                 
+                <p class="log2">   密&nbsp;&nbsp;&nbsp;码   <input type="password"   placeholder="请输入你的管理员密码" id="password" name="password"></p> 
+                    
+                  
+                <p class="log3">  <button type="submit" class="btn1" >登录</button></p> 
+                   
+                  
+                </form>
+                <!-- /.social-auth-links -->
+                 
+              </div>
+        </div>
+
+        
+      </div>
+    
+  </body>
+</html>
